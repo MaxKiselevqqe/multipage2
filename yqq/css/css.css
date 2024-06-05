@@ -1,0 +1,95 @@
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+.uk{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* также адаптив высчитывает отступы
+звёздочка означает все операторы и классы */
+.header{
+background-color: aquamarine;
+}
+.header-main{
+background-color: transparent; 
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 10px;
+    /* адаптив марджин для того чтобы он от начала страницы дальше */
+}
+body{
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: "Inter Tight", sans-serif;
+}
+.header_inner{
+padding-top: 40px;
+display: flex;
+ justify-content: space-between;
+}
+.menu_li{
+    display:flex;
+    gap: 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: blueviolet;
+    
+}
+main{
+    flex-grow: 1;
+}
+.top{
+color:black;
+text-align: center;
+ padding-top:100px;
+ padding-bottom: 40px;
+
+}
+.title{
+    padding-bottom: 40px;
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.toplink{
+    background-color: black;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    /* чтобы работало всё правильно как для блочного тега */
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+}
+.carousel slide{
+    box-sizing: content-box;
+  }
+  
+  .carousel{ 
+   position: fixed; 
+   top: 20%; 
+   left: 20%; 
+  } 
+   
+  .car_gen_2{ 
+   position: fixed; 
+   top: 20%; 
+   left: 60%; 
+  } 
