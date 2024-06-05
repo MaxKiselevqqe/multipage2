@@ -6,7 +6,7 @@ html{
     margin: 0;
     padding: 0;
 }
-.uk{
+.ul{
     list-style: none;
 }
 a{
@@ -15,7 +15,10 @@ a{
 /* также адаптив высчитывает отступы
 звёздочка означает все операторы и классы */
 .header{
-background-color: aquamarine;
+background-color: whitesmoke;
+}
+html,body{
+    height: 100%;
 }
 .header-main{
 background-color: transparent; 
@@ -36,6 +39,7 @@ body{
     font-size: 16px;
     font-weight: 400px;
     font-family: "Inter Tight", sans-serif;
+    line-height: 1.3;
 }
 .header_inner{
 padding-top: 40px;
@@ -48,10 +52,10 @@ display: flex;
     text-decoration: none;
     text-transform: uppercase;
     color: blueviolet;
-    
 }
 main{
     flex-grow: 1;
+    /* максимальное растяжение */
 }
 .top{
 color:black;
@@ -93,3 +97,43 @@ text-align: center;
    top: 20%; 
    left: 60%; 
   } 
+footer{
+    background-color: whitesmoke;
+    padding: 50px 0 32px;
+    color: black;
+}
+.footer_menu_li{
+    max-width: 250px;
+}
+  .footer-menu{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+  .footermenutitle{
+    font-size:24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+  .footer-menuitem + .footer-menuitem{
+    /* футер + футер является селектором + и является заменой для чайлда
+    он получается ищет значенте до+ т подключает ещё и соседа после + и является более производиьельным способом */
+    padding-top: 20px;
+   
+  }
+  .app{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  .footerwords{
+   min-width: 560;
+   margin: 0 auto;
+   text-align: center;
+  }
+  .docs{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
